@@ -96,20 +96,20 @@
 </packages>
 <symbols>
 <symbol name="L6726A">
-<pin name="VCC" x="-20.32" y="15.24" length="short" direction="pwr"/>
-<pin name="COMP" x="-20.32" y="-5.08" length="short" direction="in"/>
-<pin name="FB" x="-20.32" y="-15.24" length="short" direction="in"/>
-<pin name="BOOT" x="17.78" y="15.24" length="short" direction="pwr" rot="R180"/>
-<pin name="UGATE" x="17.78" y="10.16" length="short" direction="out" rot="R180"/>
-<pin name="PHASE" x="17.78" y="5.08" length="short" direction="in" rot="R180"/>
-<pin name="LGATE/OC" x="17.78" y="-5.08" length="short" direction="out" rot="R180"/>
-<pin name="GND" x="17.78" y="-15.24" length="short" direction="pwr" rot="R180"/>
-<wire x1="-17.78" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
-<text x="-17.78" y="-20.32" size="1.778" layer="95">&gt; NAME</text>
-<text x="5.08" y="-20.32" size="1.778" layer="96">&gt; VALUE</text>
+<pin name="VCC" x="0" y="30.48" length="short" direction="pwr" rot="R270"/>
+<pin name="COMP" x="-25.4" y="5.08" length="short" direction="in"/>
+<pin name="FB" x="-25.4" y="22.86" length="short" direction="in"/>
+<pin name="BOOT" x="25.4" y="22.86" length="short" direction="pwr" rot="R180"/>
+<pin name="UGATE" x="25.4" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="PHASE" x="25.4" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="LGATE/OC" x="25.4" y="-25.4" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="-25.4" y="-25.4" length="short" direction="pwr"/>
+<wire x1="-22.86" y1="27.94" x2="22.86" y2="27.94" width="0.254" layer="94"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-30.48" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
+<text x="-22.86" y="-33.02" size="1.778" layer="95">&gt; NAME</text>
+<text x="5.08" y="-33.02" size="1.778" layer="96">&gt; VALUE</text>
 <text x="-5.08" y="0" size="1.778" layer="97">L6727a
 A6727a</text>
 </symbol>
