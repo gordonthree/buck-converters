@@ -18,10 +18,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="6" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="14" fill="1" visible="yes" active="no"/>
 <layer number="26" name="bNames" color="13" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="6" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="5" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -13855,11 +13855,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="CSN" library="rcl" deviceset="C-EU" device="C0603" value="3.3n"/>
 <part name="RSN" library="rcl" deviceset="R-US_" device="R0603" value="2R2"/>
-<part name="CBULK1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="33u"/>
-<part name="COUT1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="220u"/>
-<part name="CBULK2" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="33u"/>
+<part name="COUT1" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_C6" value="330u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="COUT2" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="220u"/>
+<part name="COUT2" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_C6" value="330u"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="RH" library="rcl" deviceset="R-US_" device="R0603" value="4K640"/>
@@ -13870,9 +13868,11 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="OUT" library="amass" deviceset="XT60" device="PW-M" value="OUT"/>
 <part name="IN" library="amass" deviceset="XT60" device="PW-M" value="IN"/>
-<part name="CBULK3" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="33u"/>
-<part name="CBULK4" library="rcl" deviceset="CPOL-US" device="SANYO_SMD_E7" value="33u"/>
 <part name="L" library="coilcraft" deviceset="INDUCTOR" device=".XAL1010" value="3R3"/>
+<part name="CBULK1" library="rcl" deviceset="C-EU" device="C2220K" value="33u"/>
+<part name="CBULK2" library="rcl" deviceset="C-EU" device="C2220K" value="33u"/>
+<part name="CBULK3" library="rcl" deviceset="C-EU" device="C2220K" value="33u"/>
+<part name="CBULK4" library="rcl" deviceset="C-EU" device="C2220K" value="33u"/>
 </parts>
 <sheets>
 <sheet>
@@ -13902,9 +13902,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="GND7" gate="1" x="137.16" y="-5.08"/>
 <instance part="CSN" gate="G$1" x="149.86" y="10.16"/>
 <instance part="RSN" gate="G$1" x="149.86" y="20.32" rot="R270"/>
-<instance part="CBULK1" gate="G$1" x="157.48" y="81.28"/>
 <instance part="COUT1" gate="G$1" x="165.1" y="10.16"/>
-<instance part="CBULK2" gate="G$1" x="167.64" y="76.2"/>
 <instance part="GND8" gate="1" x="167.64" y="55.88"/>
 <instance part="COUT2" gate="G$1" x="175.26" y="10.16"/>
 <instance part="GND10" gate="1" x="175.26" y="-5.08"/>
@@ -13917,9 +13915,11 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="GND9" gate="1" x="233.68" y="-17.78"/>
 <instance part="OUT" gate="G$1" x="243.84" y="25.4" rot="MR0"/>
 <instance part="IN" gate="G$1" x="203.2" y="86.36" rot="MR0"/>
+<instance part="L" gate="G$1" x="162.56" y="27.94"/>
+<instance part="CBULK1" gate="G$1" x="157.48" y="81.28"/>
+<instance part="CBULK2" gate="G$1" x="167.64" y="76.2"/>
 <instance part="CBULK3" gate="G$1" x="177.8" y="71.12"/>
 <instance part="CBULK4" gate="G$1" x="187.96" y="66.04"/>
-<instance part="L" gate="G$1" x="162.56" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -13973,8 +13973,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <junction x="137.16" y="71.12"/>
 <wire x1="157.48" y1="83.82" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
 <junction x="157.48" y="88.9"/>
-<pinref part="CBULK1" gate="G$1" pin="+"/>
-<pinref part="CBULK2" gate="G$1" pin="+"/>
 <wire x1="167.64" y1="88.9" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 <junction x="167.64" y="88.9"/>
 <wire x1="170.18" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
@@ -13983,11 +13981,13 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <pinref part="IN" gate="G$1" pin="+"/>
 <wire x1="198.12" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
 <junction x="177.8" y="88.9"/>
-<pinref part="CBULK3" gate="G$1" pin="+"/>
-<pinref part="CBULK4" gate="G$1" pin="+"/>
 <wire x1="187.96" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="68.58" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
 <junction x="187.96" y="88.9"/>
+<pinref part="CBULK1" gate="G$1" pin="1"/>
+<pinref part="CBULK2" gate="G$1" pin="1"/>
+<pinref part="CBULK3" gate="G$1" pin="1"/>
+<pinref part="CBULK4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14026,10 +14026,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="CBULK2" gate="G$1" pin="-"/>
 <wire x1="167.64" y1="58.42" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="58.42" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="CBULK1" gate="G$1" pin="-"/>
 <wire x1="157.48" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
 <junction x="167.64" y="58.42"/>
 <wire x1="177.8" y1="58.42" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
@@ -14039,11 +14037,13 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="193.04" y1="83.82" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="58.42" x2="187.96" y2="58.42" width="0.1524" layer="91"/>
 <junction x="177.8" y="58.42"/>
-<pinref part="CBULK3" gate="G$1" pin="-"/>
-<pinref part="CBULK4" gate="G$1" pin="-"/>
 <wire x1="187.96" y1="58.42" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="58.42" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
 <junction x="187.96" y="58.42"/>
+<pinref part="CBULK1" gate="G$1" pin="2"/>
+<pinref part="CBULK2" gate="G$1" pin="2"/>
+<pinref part="CBULK3" gate="G$1" pin="2"/>
+<pinref part="CBULK4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
