@@ -517,10 +517,13 @@ UsedLibrary="C:/Users/glmcl/git/eagle_libraries/Xilinx.lbr"
 UsedLibrary="C:/Users/glmcl/git/eagle_libraries/fairchild.lbr"
 UsedLibrary="C:/Users/glmcl/git/eagle_libraries/microsd.lbr"
 UsedLibrary="C:/Users/glmcl/git/eagle_libraries/work.lbr"
+UsedLibrary="c:/users/glmcl/git/buck-converters/lib/stm-l6727a.lbr"
+UsedLibrary="D:/My Drive/Eagle/LBR/Eagle-Library-AMASS/amass.lbr"
+UsedLibrary="D:/My Drive/Eagle/LBR/eagle-master/XT60.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="519 46 2056 1158"
+Loc="343 220 1880 1332"
 State=2
 Number=0
 
