@@ -13722,17 +13722,17 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
 <wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="21"/>
 <wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="21"/>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="21"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="21"/>
 <smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
@@ -13764,7 +13764,9 @@ regulation is ±0.15% typical at +25°C.</description>
 <pin name="GND" x="0" y="-15.24" length="short" direction="sup" rot="R90"/>
 <pin name="|SHDN" x="-12.7" y="5.08" length="short" direction="in"/>
 <pin name="NC" x="12.7" y="-10.16" length="short" direction="nc" rot="R180"/>
-<text x="-5.08" y="0" size="1.778" layer="97">MCP1804</text>
+<text x="-5.08" y="0" size="1.778" layer="97" font="vector">MCP1804</text>
+<text x="-4.064" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-4.572" y="-5.08" size="1.778" layer="95" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13863,13 +13865,13 @@ regulation is ±0.15% typical at +25°C.</description>
 <wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0.1998" layer="39"/>
 <wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0.1998" layer="39"/>
 <wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -13878,18 +13880,18 @@ regulation is ±0.15% typical at +25°C.</description>
 <smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.302" y="-1.905" size="0.6096" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="0.6096" layer="27" font="vector" ratio="14" rot="R90">&gt;VALUE</text>
 <text x="-1.905" y="-0.635" size="0.4064" layer="48">IPC SO8</text>
 <text x="-1.905" y="0.365" size="0.3048" layer="48">JEDEC MS-012 AA</text>
-<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
-<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
-<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="21"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="21"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="21"/>
 <rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
 <rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
-<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
-<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
-<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="21"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="21"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="21"/>
 <rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
 </package>
 </packages>
@@ -13907,8 +13909,8 @@ regulation is ±0.15% typical at +25°C.</description>
 <wire x1="22.86" y1="27.94" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-30.48" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-30.48" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
-<text x="-22.86" y="-33.02" size="1.778" layer="95">&gt; NAME</text>
-<text x="5.08" y="-33.02" size="1.778" layer="96">&gt; VALUE</text>
+<text x="-22.86" y="-33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="0" size="1.778" layer="97">L6726a
 A6726a</text>
 </symbol>
@@ -13962,10 +13964,8 @@ supply voltage ranging from 5 V to 12 V</description>
 <part name="CVROUT" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="CVRIN" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="CDEC" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="RD" library="rcl" deviceset="R-US_" device="R0603" value="2R2"/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="D" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD123" value="BAT54"/>
 <part name="CBOOT" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
@@ -13997,7 +13997,7 @@ supply voltage ranging from 5 V to 12 V</description>
 <part name="CBULK4" library="rcl" deviceset="C-EU" device="C2220K" value="33u"/>
 <part name="LS" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-FDS6630A" value=""/>
 <part name="HS" library="power-mosfet" deviceset="N_MOSFET_POWERSO8" device="" value=""/>
-<part name="IC2" library="microchip-vreg" deviceset="MCP1804" device=""/>
+<part name="IC2" library="microchip-vreg" deviceset="MCP1804" device="" value=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
 </parts>
 <sheets>
@@ -14006,18 +14006,24 @@ supply voltage ranging from 5 V to 12 V</description>
 <text x="175.26" y="27.94" size="1.778" layer="94" font="vector">Synchronous buck converter based on STM L6726a Controller
 (C) 2022 G. MCLELLAN</text>
 <text x="266.7" y="7.62" size="1.778" layer="94" font="vector">1</text>
+<text x="215.9" y="157.48" size="1.778" layer="97">15-28VDC</text>
+<text x="213.36" y="96.52" size="1.778" layer="97">5V 25A</text>
+<wire x1="17.78" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="43.18" y1="109.22" x2="43.18" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="43.18" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="88.9" x2="17.78" y2="109.22" width="0.1524" layer="97" style="shortdash"/>
+<text x="18.542" y="90.17" size="0.8128" layer="97" font="vector">Feedback voltage divider</text>
+<text x="26.416" y="169.164" size="1.27" layer="97" font="vector">5V LDO</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="91.44" y="101.6"/>
-<instance part="P+1" gate="VCC" x="256.54" y="200.66"/>
-<instance part="CVROUT" gate="G$1" x="256.54" y="182.88"/>
-<instance part="CVRIN" gate="G$1" x="215.9" y="182.88"/>
-<instance part="P+2" gate="1" x="215.9" y="200.66"/>
-<instance part="GND1" gate="1" x="236.22" y="154.94"/>
-<instance part="CDEC" gate="G$1" x="38.1" y="142.24"/>
+<instance part="P+1" gate="VCC" x="55.88" y="172.72"/>
+<instance part="CVROUT" gate="G$1" x="55.88" y="154.94"/>
+<instance part="CVRIN" gate="G$1" x="15.24" y="154.94"/>
+<instance part="P+2" gate="1" x="15.24" y="172.72"/>
+<instance part="CDEC" gate="G$1" x="63.5" y="142.24"/>
 <instance part="RD" gate="G$1" x="104.14" y="149.86"/>
-<instance part="P+3" gate="VCC" x="38.1" y="165.1"/>
-<instance part="GND2" gate="1" x="38.1" y="132.08"/>
+<instance part="GND2" gate="1" x="63.5" y="129.54"/>
 <instance part="D" gate="G$1" x="121.92" y="142.24" rot="R270"/>
 <instance part="CBOOT" gate="G$1" x="121.92" y="119.38"/>
 <instance part="RGHS" gate="G$1" x="132.08" y="106.68"/>
@@ -14025,20 +14031,20 @@ supply voltage ranging from 5 V to 12 V</description>
 <instance part="P+4" gate="1" x="182.88" y="160.02"/>
 <instance part="GND3" gate="1" x="157.48" y="116.84"/>
 <instance part="GND5" gate="1" x="162.56" y="55.88"/>
-<instance part="GND7" gate="1" x="149.86" y="55.88"/>
+<instance part="GND7" gate="1" x="144.78" y="55.88"/>
 <instance part="CSN" gate="G$1" x="162.56" y="71.12"/>
 <instance part="RSN" gate="G$1" x="162.56" y="81.28" rot="R270"/>
 <instance part="COUT1" gate="G$1" x="177.8" y="71.12"/>
 <instance part="GND8" gate="1" x="180.34" y="116.84"/>
 <instance part="COUT2" gate="G$1" x="187.96" y="71.12"/>
 <instance part="GND10" gate="1" x="187.96" y="55.88"/>
-<instance part="GND4" gate="1" x="38.1" y="71.12"/>
+<instance part="GND4" gate="1" x="38.1" y="53.34"/>
 <instance part="RH" gate="G$1" x="30.48" y="96.52" rot="R270"/>
 <instance part="RL" gate="G$1" x="38.1" y="96.52" rot="R270"/>
 <instance part="CP" gate="G$1" x="48.26" y="93.98"/>
 <instance part="CC" gate="G$1" x="55.88" y="99.06"/>
 <instance part="RC" gate="G$1" x="55.88" y="83.82" rot="R270"/>
-<instance part="GND9" gate="1" x="213.36" y="48.26"/>
+<instance part="GND9" gate="1" x="213.36" y="55.88"/>
 <instance part="XT60-OUT" gate="G$1" x="220.98" y="86.36" rot="MR0"/>
 <instance part="XT60-IN" gate="G$1" x="220.98" y="147.32" rot="MR0"/>
 <instance part="L" gate="G$1" x="175.26" y="88.9"/>
@@ -14046,9 +14052,12 @@ supply voltage ranging from 5 V to 12 V</description>
 <instance part="CBULK2" gate="G$1" x="180.34" y="137.16"/>
 <instance part="CBULK3" gate="G$1" x="190.5" y="132.08"/>
 <instance part="CBULK4" gate="G$1" x="200.66" y="127"/>
-<instance part="LS" gate="NMOS" x="147.32" y="78.74"/>
-<instance part="HS" gate="G$1" x="147.32" y="109.22"/>
-<instance part="IC2" gate="G$1" x="236.22" y="180.34"/>
+<instance part="LS" gate="NMOS" x="142.24" y="78.74"/>
+<instance part="HS" gate="G$1" x="142.24" y="109.22"/>
+<instance part="IC2" gate="G$1" x="35.56" y="152.4" smashed="yes">
+<attribute name="NAME" x="41.148" y="169.164" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="30.988" y="147.32" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
 </instances>
@@ -14057,26 +14066,24 @@ supply voltage ranging from 5 V to 12 V</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="38.1" y1="144.78" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="48.26" y1="162.56" x2="55.88" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="162.56" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="CVROUT" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="162.56" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
+<junction x="55.88" y="162.56"/>
+<wire x1="63.5" y1="144.78" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="CDEC" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="149.86" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
-<junction x="38.1" y="149.86"/>
+<wire x1="63.5" y1="149.86" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<junction x="63.5" y="149.86"/>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="91.44" y1="132.08" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="RD" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
 <junction x="91.44" y="149.86"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="248.92" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="190.5" x2="256.54" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="CVROUT" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="190.5" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
-<junction x="256.54" y="190.5"/>
+<wire x1="55.88" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -14085,13 +14092,13 @@ supply voltage ranging from 5 V to 12 V</description>
 <wire x1="182.88" y1="157.48" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="149.86" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="149.86" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="149.86" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="CHF" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="132.08" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="132.08" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="129.54" x2="157.48" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
-<junction x="149.86" y="132.08"/>
+<wire x1="157.48" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
+<junction x="144.78" y="132.08"/>
 <wire x1="170.18" y1="144.78" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
 <junction x="170.18" y="149.86"/>
 <wire x1="180.34" y1="149.86" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
@@ -14114,24 +14121,19 @@ supply voltage ranging from 5 V to 12 V</description>
 <segment>
 <pinref part="CVRIN" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<wire x1="215.9" y1="185.42" x2="215.9" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
-<wire x1="215.9" y1="190.5" x2="215.9" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
-<junction x="215.9" y="190.5"/>
+<wire x1="15.24" y1="162.56" x2="15.24" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="162.56" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="15.24" y="162.56"/>
 <pinref part="IC2" gate="G$1" pin="|SHDN"/>
-<wire x1="220.98" y1="190.5" x2="215.9" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="185.42" x2="220.98" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="185.42" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
-<junction x="220.98" y="190.5"/>
+<wire x1="20.32" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="157.48" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="157.48" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="20.32" y="162.56"/>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="CDEC" gate="G$1" pin="2"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="38.1" y1="137.16" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="CHF" gate="G$1" pin="2"/>
@@ -14139,7 +14141,7 @@ supply voltage ranging from 5 V to 12 V</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="149.86" y1="58.42" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="58.42" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="LS" gate="NMOS" pin="S"/>
 </segment>
 <segment>
@@ -14184,7 +14186,7 @@ supply voltage ranging from 5 V to 12 V</description>
 <wire x1="66.04" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="76.2" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="RC" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="76.2" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
 <junction x="55.88" y="76.2"/>
@@ -14198,21 +14200,26 @@ supply voltage ranging from 5 V to 12 V</description>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="215.9" y1="83.82" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="83.82" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="XT60-OUT" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="236.22" y1="157.48" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="CVRIN" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="162.56" x2="215.9" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="162.56" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="134.62" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="CVROUT" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="162.56" x2="256.54" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="162.56" x2="256.54" y2="177.8" width="0.1524" layer="91"/>
-<junction x="236.22" y="162.56"/>
+<wire x1="35.56" y1="134.62" x2="55.88" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="134.62" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
+<junction x="35.56" y="134.62"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="236.22" y1="162.56" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="134.62" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="CDEC" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="63.5" y1="137.16" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="134.62" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="134.62" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
+<junction x="55.88" y="134.62"/>
+<junction x="63.5" y="134.62"/>
 </segment>
 </net>
 <net name="BOOT" class="0">
@@ -14257,7 +14264,7 @@ supply voltage ranging from 5 V to 12 V</description>
 <net name="UGATE" class="0">
 <segment>
 <pinref part="RGHS" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="HS" gate="G$1" pin="G"/>
 </segment>
 </net>
@@ -14303,14 +14310,14 @@ supply voltage ranging from 5 V to 12 V</description>
 <segment>
 <pinref part="RSN" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="86.36" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="83.82" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="88.9" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
-<junction x="149.86" y="88.9"/>
-<wire x1="149.86" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="83.82" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="88.9" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
+<junction x="144.78" y="88.9"/>
+<wire x1="144.78" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="CBOOT" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="114.3" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <junction x="121.92" y="88.9"/>
-<wire x1="121.92" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PHASE"/>
 <wire x1="116.84" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
@@ -14331,7 +14338,7 @@ supply voltage ranging from 5 V to 12 V</description>
 <net name="LGATE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="LGATE/OC"/>
-<wire x1="116.84" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="LS" gate="NMOS" pin="G"/>
 </segment>
 </net>
