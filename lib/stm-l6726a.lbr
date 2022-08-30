@@ -110,12 +110,12 @@
 <wire x1="-22.86" y1="-30.48" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
 <text x="-22.86" y="-33.02" size="1.778" layer="95">&gt; NAME</text>
 <text x="5.08" y="-33.02" size="1.778" layer="96">&gt; VALUE</text>
-<text x="-5.08" y="0" size="1.778" layer="97">L6727a
-A6727a</text>
+<text x="-5.08" y="0" size="1.778" layer="97">L6726a
+A6726a</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L6727A" prefix="IC">
+<deviceset name="L6726A" prefix="IC">
 <description>L6726A is a single-phase step-down controller
 with integrated high-current drivers that provides
 complete control logic, protections and reference
