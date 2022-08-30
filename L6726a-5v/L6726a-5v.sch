@@ -13581,7 +13581,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="D" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD123" value="BAT54"/>
 <part name="CBOOT" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="RGHS" library="rcl" deviceset="R-US_" device="R0603" value="2R2"/>
+<part name="RGHS" library="rcl" deviceset="R-US_" device="R0805" value="2R2"/>
 <part name="CHF" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -13597,7 +13597,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="RH" library="rcl" deviceset="R-US_" device="R0805" value="4K640"/>
 <part name="RL" library="rcl" deviceset="R-US_" device="R0805" value="887R"/>
 <part name="CP" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
-<part name="CF" library="rcl" deviceset="C-EU" device="C0603" value="15n"/>
+<part name="CC" library="rcl" deviceset="C-EU" device="C0603" value="15n"/>
 <part name="RC" library="rcl" deviceset="R-US_" device="R0603" value="18K0"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="OUT" library="amass" deviceset="XT60" device="PW-M" value="OUT"/>
@@ -13644,7 +13644,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="RH" gate="G$1" x="17.78" y="35.56" rot="R270"/>
 <instance part="RL" gate="G$1" x="25.4" y="35.56" rot="R270"/>
 <instance part="CP" gate="G$1" x="35.56" y="33.02"/>
-<instance part="CF" gate="G$1" x="43.18" y="38.1"/>
+<instance part="CC" gate="G$1" x="43.18" y="38.1"/>
 <instance part="RC" gate="G$1" x="43.18" y="22.86" rot="R270"/>
 <instance part="GND9" gate="1" x="233.68" y="-17.78"/>
 <instance part="OUT" gate="G$1" x="243.84" y="25.4" rot="MR0"/>
@@ -13882,19 +13882,20 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </net>
 <net name="COMP" class="0">
 <segment>
-<wire x1="55.88" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="45.72" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="CF" gate="G$1" pin="1"/>
+<pinref part="CC" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="40.64" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
-<junction x="43.18" y="45.72"/>
 <pinref part="CP" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="COMP"/>
+<wire x1="43.18" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<junction x="43.18" y="45.72"/>
 </segment>
 </net>
 <net name="CC" class="0">
 <segment>
 <pinref part="RC" gate="G$1" pin="1"/>
-<pinref part="CF" gate="G$1" pin="2"/>
+<pinref part="CC" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="27.94" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
