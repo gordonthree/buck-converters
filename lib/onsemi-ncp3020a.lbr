@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -96,22 +96,34 @@
 </packages>
 <symbols>
 <symbol name="NCP3020">
-<pin name="VCC" x="-40.64" y="15.24" length="short" direction="pwr"/>
-<pin name="COMP" x="-40.64" y="-5.08" length="short" direction="in"/>
-<pin name="FB" x="-40.64" y="-15.24" length="short" direction="in"/>
-<pin name="BST" x="-2.54" y="15.24" length="short" direction="pwr" rot="R180"/>
-<pin name="HSDR" x="-2.54" y="10.16" length="short" direction="out" rot="R180"/>
-<pin name="VSW" x="-2.54" y="5.08" length="short" direction="in" rot="R180"/>
-<pin name="LSDR" x="-2.54" y="-5.08" length="short" direction="out" rot="R180"/>
-<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr" rot="R180"/>
-<wire x1="-38.1" y1="17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-17.78" x2="-38.1" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-17.78" x2="-38.1" y2="17.78" width="0.254" layer="94"/>
-<text x="-38.1" y="-20.32" size="1.778" layer="95">&gt; NAME</text>
-<text x="-15.24" y="-20.32" size="1.778" layer="96">&gt; VALUE</text>
-<text x="-27.94" y="0" size="1.778" layer="97">NCP3020A/B
+<description>The NCP3020 is a PWM device designed to operate from a wide
+input range and is capable of producing an output voltage as low as
+0.6 V. The NCP3020 provides integrated gate drivers and an internally
+set 300 kHz (NCP3020A) or 600 kHz (NCP3020B) oscillator. The
+NCP3020 also has an externally compensated transconductance error
+amplifier with an internally fixed soft−start. Protection features
+include lossless current limit and short circuit protection, output
+overvoltage protection, output undervoltage protection, and input
+undervoltage lockout. The NCP3020 is currently available in a SOIC
+−8 package.</description>
+<pin name="VCC" x="0" y="25.4" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="COMP" x="-17.78" y="0" length="short" direction="in"/>
+<pin name="FB" x="-17.78" y="-17.78" length="short" direction="in"/>
+<pin name="BST" x="17.78" y="20.32" length="short" direction="pwr" rot="R180"/>
+<pin name="HSDR" x="17.78" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="VSW" x="17.78" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="LSDR" x="17.78" y="-17.78" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-27.94" visible="pad" length="short" direction="pwr" rot="R90"/>
+<wire x1="-15.24" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-25.4" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<text x="-15.24" y="-27.94" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="10.16" size="1.778" layer="97">NCP3020A/B
 VCP3020A/B</text>
+<text x="-2.54" y="-23.876" size="1.778" layer="97">GND</text>
+<text x="-2.032" y="19.558" size="1.778" layer="97">VCC</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -126,7 +138,7 @@ include lossless current limit and short circuit protection, output
 overvoltage protection, output undervoltage protection, and input
 undervoltage lockout.</description>
 <gates>
-<gate name="G$1" symbol="NCP3020" x="20.32" y="0"/>
+<gate name="G$1" symbol="NCP3020" x="20.32" y="-5.08"/>
 </gates>
 <devices>
 <device name="DR2G" package="SO-08">
